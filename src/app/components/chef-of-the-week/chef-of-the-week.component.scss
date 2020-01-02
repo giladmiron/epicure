@@ -1,0 +1,96 @@
+.chef-of-the-week-title {
+    width: 150px;
+    height: 17px;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.93px;
+    text-align: center;
+    color: black;
+  }
+
+.chef-image{
+    position: relative;
+}
+
+  .Rectangle {
+    width: 334px;
+    height: 239.4px;
+    object-fit: contain;
+  }
+
+  .chef-name {
+    width: 334.9px;
+    height: 54.6px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+  }
+
+.chef-name span{
+        width: 171px;
+        height: 35px;
+        font-family: HelveticaNeue;
+        font-size: 30px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1.07px;
+        text-align: center;
+        color: black;
+}
+
+.chef-of-the-week-description {
+    width: 325px;
+    height: 183px;
+    font-family: HelveticaNeue;
+    font-size: 13.5px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.04px;
+    text-align: center;
+    color: black;
+  }
+
+  .chef-restaurants-title {
+    width: 133px;
+    height: 17px;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 0.88px;
+    color: black
+  }
+
+
+  .restaurant-element{
+    width: 153.6px;
+    height: 237.4px;
+    background-color: #f9f4ea;
+  }
+
+  .restaurant-img {
+    width: 153.6px;
+    height: 149px;
+    object-fit: contain;
+  }
+
+  .restaurant-name{
+    width: 52px;
+    height: 23px;
+    font-family: HelveticaNeue;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.33px;
+    text-align: center;
+    color: black;
+  }
