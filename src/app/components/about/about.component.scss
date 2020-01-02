@@ -1,20 +1,15 @@
-.Rectangle-Copy-4 {
+.about-rectangle {
     width: 375px;
+    margin-top: 45px;
     height: 605px;
     opacity: 0.9;
     background-color: #fafafa;
-    margin-top: 10px;
   }
 
   .About-title {
     width: 83px;
-    height: 17px;
     font-family: HelveticaNeue;
     font-size: 14px;
-    font-weight: 100;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: 0.88px;
     text-align: center;
     color: var(--black);
@@ -26,9 +21,6 @@
         font-family: HelveticaNeue;
         font-size: 14px;
         font-weight: 100;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
         letter-spacing: 1.08px;
         text-align: center;
         color: black;
@@ -42,28 +34,24 @@
 
 .Rectangle {
   position: relative;
-    width: 135.8px;
+    width: 150px;
     height: 36.8px;
     border-radius: 6.7px;
     border: solid 0.5px black;
   }
 
   .get-it-on {
-    width: 74px;
     height: 25px;
     font-family: HelveticaNeue;
-    font-size: 11.8px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
+    font-size: 12px;
+    font-weight: bold;
     letter-spacing: 0.9px;
     text-align: center;
     color: var(--black);
   }
   
-  .Get-it-on-Google-Pla .text-style-1 {
-    font-size: 9.2px;
+  .store-name{
+    font-size: 14px;
   }
 
   .apple-icon {

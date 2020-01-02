@@ -1,12 +1,9 @@
 .chef-of-the-week-title {
-    width: 150px;
+  margin-top: 45px;
     height: 17px;
     font-family: HelveticaNeue;
     font-size: 14px;
     font-weight: 100;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: 0.93px;
     text-align: center;
     color: black;
@@ -46,7 +43,6 @@
 
 .chef-of-the-week-description {
     width: 325px;
-    height: 183px;
     font-family: HelveticaNeue;
     font-size: 13.5px;
     font-weight: 100;
@@ -59,9 +55,9 @@
   }
 
   .chef-restaurants-title {
-    width: 133px;
     height: 17px;
     font-family: HelveticaNeue;
+    width: bold;
     font-size: 14px;
     font-weight: 100;
     letter-spacing: 0.88px;
@@ -84,12 +80,9 @@
   .restaurant-name{
     width: 52px;
     height: 23px;
+    font-weight: bold;
     font-family: HelveticaNeue;
     font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: 1.33px;
     text-align: center;
     color: black;
