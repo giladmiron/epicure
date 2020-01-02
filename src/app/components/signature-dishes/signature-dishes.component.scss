@@ -1,27 +1,17 @@
 .signature-dish-title {
   margin-top: 45px;
-    width: 153px;
-    height: 17px;
     font-family: HelveticaNeue;
     font-size: 13px;
     font-weight: 100;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.93px;
+    letter-spacing: 0.20px;
     text-align: center;
     color: black;
   }
 
   .signature-dish-restaurant-name {
-    width: 248px;
-    height: 19px;
     font-family: HelveticaNeue;
     font-size: 16px;
     font-weight: bolder;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: 0.94px;
     text-align: center;
     color: var(--black);
@@ -57,7 +47,7 @@
   .Line-4 {
     width: 60px;
     height: 1px;
-    border: solid 0.1px #979797;
+    border: solid 0.1px rgb(151, 151, 151,0.5);
   }
 
   .signature-dish-name {
@@ -85,13 +75,12 @@
 }
 
   .price {
-    width: 32px;
-    height: 29px;
     font-family: HelveticaNeue;
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 1.67px;
     color: black;
+    margin-bottom: 4px;
   }
 
   
