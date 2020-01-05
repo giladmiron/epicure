@@ -12,10 +12,14 @@
     color: black;
     margin-top: 65px;
   }
+  
+  swiper{
+    width: 100vw;;
+  }
 
   .restaurant-element {
-    width: 206px;
-    height: 338px;
+    width: 206px !important;
+    height: 338px !important;
     background-color: rgba(247, 224, 178, 0.7);
   }
 
@@ -23,6 +27,7 @@
     width: 206px;
     height: 224px;
     object-fit: contain;
+    top: 0;
   }
 
   .popular-restaurant-title {

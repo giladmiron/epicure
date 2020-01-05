@@ -13,6 +13,24 @@ import { ChefOfTheWeekComponent } from './components/chef-of-the-week/chef-of-th
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+import { SwiperModule } from 'ngx-swiper-wrapper';
+import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
+import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+
+const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
+  direction: 'horizontal',
+  slidesPerView: 2,
+  centeredSlides: true,
+  spaceBetween: 20,
+};
+
+const CHEF_RESTAURANTS_CONFIG: SwiperConfigInterface = {
+  direction: 'horizontal',
+  slidesPerView: 2,
+  centeredSlides: true,
+  spaceBetween: 20,
+};
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,9 +46,13 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    SwiperModule
   ],
-  providers: [],
+  providers: [{
+    provide: SWIPER_CONFIG,
+    useValue: DEFAULT_SWIPER_CONFIG
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

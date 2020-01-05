@@ -16,11 +16,22 @@
         <p class="chef-restaurants-title"> Yossi's restaurants :</p>
     </div>
 
-    <div class="chef-of-the-week-restaurants-carousele">
+
+    <swiper [config]="CHEF_RESTAURANTS_CONFIG" [(index)]="index" >
         <div class="restaurant-element">
             <img class="restaurant-img" src="../../../assets/photos/screen-shot-2019-01-06-at-10-55-45@2x.jpg">
             <div fxLayout="column" fxLayoutAlign="center center">
                 <span class="restaurant-name">Onza</span> </div>
         </div>
-    </div>
+        <div class="restaurant-element">
+            <img class="restaurant-img" src="../../../assets/photos/screen-shot-2019-01-06-at-10-55-45@2x.jpg">
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <span class="restaurant-name">Onza</span> </div>
+        </div>
+        <div class="restaurant-element">
+            <img class="restaurant-img" src="../../../assets/photos/screen-shot-2019-01-06-at-10-55-45@2x.jpg">
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <span class="restaurant-name">Onza</span> </div>
+        </div>
+    </swiper>
 </div>
