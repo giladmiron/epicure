@@ -1,0 +1,7 @@
+<div fxLayout="row wrap" fxLayoutAlign="space-around center">
+    <div class="restaurant" fxLayout="column" *ngFor="let restaurant of listToDisplay">
+        <img [src]="restaurant.img">
+        <span class="restaurant-name">{{restaurant.name}}</span>
+        <span class="restaurant-chef">{{restaurant.chef}}</span>
+    </div>
+</div>

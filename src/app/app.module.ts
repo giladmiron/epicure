@@ -1,3 +1,4 @@
+import { RestaurantsNavigationComponent } from './components/restaurants-nevigation/restaurants-navigation.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -12,6 +13,7 @@ import { IconsMeaningComponent } from './components/icons-meaning/icons-meaning.
 import { ChefOfTheWeekComponent } from './components/chef-of-the-week/chef-of-the-week.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
@@ -19,17 +21,17 @@ import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
-  slidesPerView: 2,
+  slidesPerView: 'auto',
+  spaceBetween: 140, 
   centeredSlides: true,
-  spaceBetween: 20,
+  navigation: true,
+  pagination: true,
+  keyboard: true,
 };
 
-const CHEF_RESTAURANTS_CONFIG: SwiperConfigInterface = {
-  direction: 'horizontal',
-  slidesPerView: 2,
-  centeredSlides: true,
-  spaceBetween: 20,
-};
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { RestaurantsComponent } from './pages/restaurants/restaurants.component';
+import { RestaurantsListComponent } from './components/restaurants-list/restaurants-list.component';
 
 @NgModule({
   declarations: [
@@ -41,13 +43,18 @@ const CHEF_RESTAURANTS_CONFIG: SwiperConfigInterface = {
     IconsMeaningComponent,
     ChefOfTheWeekComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    MenuComponent,
+    HomePageComponent,
+    RestaurantsComponent,
+    RestaurantsNavigationComponent,
+    RestaurantsListComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FlexLayoutModule,
-    SwiperModule
+    SwiperModule,
   ],
   providers: [{
     provide: SWIPER_CONFIG,

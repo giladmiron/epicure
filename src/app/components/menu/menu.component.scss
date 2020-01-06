@@ -1,0 +1,53 @@
+#menu{
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+    top: 0;
+}
+
+.menu-header{
+    height: 45px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+}
+
+.menu-header img{
+    margin-left: 10px;
+}
+
+.links-container{
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+.main-link{
+    height: 23px;
+    font-family: HelveticaNeue;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1.33px;
+    text-align: center;
+    color: var(--black);
+}
+
+.link{
+    height: 23px;
+    opacity: 0.3;
+    font-weight: bold;
+    font-family: HelveticaNeue;
+    font-size: 20px;
+    letter-spacing: 1.33px;
+    text-align: center;
+    color: black;
+}
+
+.line{
+    width: 196px;
+    height: 1px;
+    background-color: rgb(151, 151, 151,0.5);
+}
+
+.top-link{
+    margin-top: 20%;
+}

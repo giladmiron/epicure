@@ -9,7 +9,13 @@ export class NavBarComponent implements OnInit {
 
   constructor() { }
 
+  menuHide: boolean = true
+
   ngOnInit() {
+  }
+
+  menuStateChange() {
+    this.menuHide = !this.menuHide
   }
 
 }

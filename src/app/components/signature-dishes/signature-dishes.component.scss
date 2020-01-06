@@ -8,10 +8,6 @@
     color: black;
   }
 
-  swiper{
-    width: 150vw;
-  }
-
   .signature-dish-restaurant-name {
     font-family: HelveticaNeue;
     font-size: 16px;
@@ -21,23 +17,19 @@
     color: var(--black);
   }
   
-  .dish-image {
-    margin-top: 13px;
-    width: 259.2px;
-    height: 208.8px;
-    object-fit: contain;
+  .signature-container{
+    width: 259px !important;
+    height: 500px !important ;
+    background-color:rgb(247,224,178,0.4)
   }
 
-  img{
-    width: 206px;
-    height: 224px;
+  .dish-image {
     object-fit: contain;
+    width: 259px;
   }
 
   .description-container {
-    width: 259.2px;
-    height: 262.1px;
-    background-color:rgba(247, 224, 178, 0.7);
+    height: 262px;
   }
 
   .dish-icon {
@@ -93,4 +85,8 @@
   width: 11px;
   height: 9px;
   object-fit: contain;
+}
+
+swiper{
+  width: 100vw;
 }

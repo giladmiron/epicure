@@ -1,0 +1,14 @@
+<div id="menu">
+    <div class="menu-header" fxLayout="column" fxLayoutAlign="center start">
+        <img src="../../../assets/icons/x.svg" (click)="hideMenu()">
+    </div>
+    <div class="links-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="60px">
+        <span class="main-link top-link"> Chefs </span>
+        <span (click)="hideMenu()" routerLink="/restaurants" class="main-link"> All Restaurants</span>
+        <div class="line"></div>
+        <span class="link"> Sign in</span>
+        <span class="link"> Contact us</span>
+        <span class="link"> Terms of Use</span>
+
+    </div>
+</div>

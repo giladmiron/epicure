@@ -1,0 +1,14 @@
+<h2 class='title'>RESTAURANTS</h2>
+<div class="restaurants-nav" fxLayout="row" fxLayoutAlign="space-around center">
+    <span [ngStyle]="{'font-weight':navState.All? 'bold' : 100 }" (click)="changeList($event)">
+        All </span>
+    <span [ngStyle]="{'font-weight':navState.New? 'bold' : 100 }" (click)="changeList($event)">
+        New </span>
+    <span [ngStyle]="{'font-weight':navState.MostPopular? 'bold' : 100 }" (click)="changeList($event)">
+        Most Popular </span>
+    <span [ngStyle]="{'font-weight':navState.OpenNow? 'bold' : 100 }" (click)="changeList($event)">
+        Open Now </span>
+</div>
+
+<app-restaurants-list [listToDisplay]="listToDisplay"
+></app-restaurants-list>
