@@ -48,11 +48,21 @@
   }
 
   .all-restaurants{
-    right:50px;
     font-weight: bold;
     font-family: HelveticaNeue;
     font-size: 20px;
     letter-spacing: 2px;
-    text-align: center;
-    color: var(--black);
+    // text-align: center;
+  }
+
+  .desktop{
+
+    
+    .restaurant-element {
+      width: 250px !important;
+    }
+    .popular-restaurant-img {
+      width: 250px !important;
+      object-fit: fill;
+    }
   }
