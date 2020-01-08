@@ -1,0 +1,10 @@
+<!-- <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px"> -->
+<div *ngFor="let restaurant of popularRestaurants">
+    <div class="restaurant-element">
+        <img src={{restaurant.img}} class="popular-restaurant-img">
+        <div fxLayout="column" fxLayoutAlign="center center">
+            <span class="popular-restaurant-title">{{restaurant.title}}</span>
+            <span class="popular-restaurant-chef">{{restaurant.chef}}</span>
+        </div>
+    </div>
+    <!-- </div> -->
