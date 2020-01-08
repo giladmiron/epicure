@@ -1,0 +1,24 @@
+<div class="restaurant-details-container" fxLayout="column" fxLayoutAlign="center center">
+
+    <img src="../../../assets/photos/claro@3x.jpg" class="restaurant-details-img">
+    <span class="restaurant-name">Claro</span>
+    <span class="restaurant-chef">Ran Shmueli</span>
+    <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="5px">
+        <img src="../../../assets/icons/clock-icon.svg">
+        <p class='open'>Open now</p>
+    </div>
+    <div class="categories" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="13px">
+        <div fxLayout="column" fxLayoutAlign="center center">
+            <span class="category" (click)="changeCategory($event)" (click)="invokeParentScrollFunction('breakfast')"> Breakfast </span>
+            <img class="line" *ngIf="categoryStatus.Breakfast" class="line" src="../../../assets/icons/line-7-copy-2.svg">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="center center">
+            <span class="category" (click)="changeCategory($event)" (click)="invokeParentScrollFunction('lunch')"> Lunch </span>
+            <img class="line" *ngIf="categoryStatus.Lunch" class="line" src="../../../assets/icons/line-7-copy-2.svg">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="center center">
+            <span class="category" (click)="changeCategory($event)" (click)="invokeParentScrollFunction('dinner')"> Dinner </span>
+            <img class="line" *ngIf="categoryStatus.Dinner" class="line" src="../../../assets/icons/line-7-copy-2.svg">
+        </div>
+    </div>
+</div>

@@ -15,6 +15,7 @@
     letter-spacing: 0.94px;
     text-align: center;
     color: var(--black);
+    width: 259px;
   }
   
   .signature-container{
@@ -89,4 +90,10 @@
 
 swiper{
   width: 100vw;
+}
+
+.desktop{
+  .signature-dish-title{
+    font-size: 18px;
+  }
 }

@@ -1,5 +1,5 @@
 <h2 class='title'>RESTAURANTS</h2>
-<div class="restaurants-nav" fxLayout="row" fxLayoutAlign="space-around center">
+<div class="restaurants-nav" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutAlign.gt-xs="center center" fxLayoutGap.gt-xs="20px">
     <span [ngStyle]="{'font-weight':navState.All? 'bold' : 100 }" (click)="changeList($event)">
         All </span>
     <span [ngStyle]="{'font-weight':navState.New? 'bold' : 100 }" (click)="changeList($event)">

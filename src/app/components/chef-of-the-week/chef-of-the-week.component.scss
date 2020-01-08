@@ -57,6 +57,7 @@
     font-weight: 100;
     letter-spacing: 0.88px;
     color: rgb(0,0,0,0.7);
+    margin-left: 20px;
   }
   
   swiper{
@@ -85,4 +86,17 @@
     text-align: center;
     margin-top: 9px;
     color: black;
+  }
+
+  .chef-title-desktop{
+    font-size: 18px;
+  }
+
+  .desktop{
+
+   margin-left:18%;
+    
+    .chef-restaurants-title{
+      margin-left: 0;
+    }
   }

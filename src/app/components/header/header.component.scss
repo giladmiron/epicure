@@ -1,19 +1,27 @@
-.header-main-image {
-    height: 269px;
+
+.content-container{
+  align-items: center;
+  height: 269px;
     width: 100vw;
+}
+
+.header-main-image {
+  height: 269px;
+  width: 100vw;
+    position: absolute;
+    z-index: 1;
   }
 
   .header-rectangle {
+    margin: 0 auto;
+    z-index: 10;
     width: 305px;
     height: 125px;
     background-color: rgba(255, 255, 255, 0.88);
-    position: absolute;
-    margin-top:72px;
-    margin-left: 9%;
   }
 
   .Header-title {
-    width: 240px;
+    width: 280px;
     height: 39px;
     font-family: HelveticaNeue;
     font-size: 16px;
@@ -91,6 +99,7 @@
     letter-spacing: 0.93px;
     color: black;
   }
+  
 .search-icon {
   width: 16px;
   height: 16px;
@@ -115,4 +124,24 @@
 
 .Search-for-restauran:focus {
     outline-width: 0;
+}
+
+.desktop{
+
+  .content-container{
+  height: 500px;
+  }
+  .header-main-image{
+    height: 500px;
+  }
+
+  .header-rectangle{
+    width: 600px;
+    height: 140px;
+
+    .Header-title{
+      font-size: 20px;
+    }
+  }
+
 }

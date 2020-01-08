@@ -1,26 +1,33 @@
-<div class="about-rectangle" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
-    <span class="About-title"> ABOUT US :</span>
-    <span class="About-span">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum
-        bibendum non eu ipsum.
-        Cras porta malesuada eros, eget blandit turpis suscipit at. Vestibulum sed massa in magna sodales porta. Vivamus
-        elit urna, dignissim a vestibulum.
-        <br><br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum
-        bibendum non eu ipsum.
-        Cras porta malesuada eros, eget blandit turpis suscipit at. Vestibulum sed massa in magna sodales porta. Vivamus
-        elit urna, dignissim a vestibulum.</span>
-    <img class="about--logo" src="../../../assets/photos/about-logo.png">
-    <div class="store" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
-        <div class="Rectangle" fxLayout="column" fxLayoutAlign="center center">
-            <span class='get-it-on'>Download on The</span>
-            <span class='get-it-on store-name'>App Store</span>
-            <img src="../../../assets/icons/apple-icon.svg" class="apple-icon">
-        </div>
-        <div class="Rectangle" fxLayout="column" fxLayoutAlign="center center">
-            <span class='get-it-on'>Get it on</span>
-            <span class='get-it-on store-name'>Google Play</span>
-            <img src="../../../assets/icons/google-icon.svg" class="google-icon">
-            <img>
+<div class="about-rectangle" ngClass.gt-xs="desktop" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px" fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="space-around center">
+
+    <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+        <span class="About-title"> ABOUT US :</span>
+        <span class="About-span">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum
+            bibendum non eu ipsum.
+            Cras porta malesuada eros, eget blandit turpis suscipit at. Vestibulum sed massa in magna sodales porta.
+            Vivamus
+            elit urna, dignissim a vestibulum.
+            <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum
+            bibendum non eu ipsum.
+            Cras porta malesuada eros, eget blandit turpis suscipit at. Vestibulum sed massa in magna sodales porta.
+            Vivamus
+            elit urna, dignissim a vestibulum.</span>
+        <img fxHide.gt-xs="true" class="about--logo" src="../../../assets/photos/about-logo.png">
+        <div class="store" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+            <div class="Rectangle" fxLayout="column" fxLayoutAlign="center center">
+                <span class='get-it-on'>Download on The</span>
+                <span class='get-it-on store-name'>App Store</span>
+                <img src="../../../assets/icons/apple-icon.svg" class="apple-icon">
+            </div>
+            <div class="Rectangle" fxLayout="column" fxLayoutAlign="center center">
+                <span class='get-it-on'>Get it on</span>
+                <span class='get-it-on store-name'>Google Play</span>
+                <img src="../../../assets/icons/google-icon.svg" class="google-icon">
+                <img>
+            </div>
         </div>
     </div>
+    <img fxHide.xs="true" class="about--logo" src="../../../assets/photos/about-logo.png">
+
 </div>

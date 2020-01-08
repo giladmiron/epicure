@@ -106,4 +106,6 @@ export class RestaurantsNavigationComponent implements OnInit {
     this.navState = newNavState
   }
 
+  
+
 }

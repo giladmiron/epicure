@@ -1,27 +1,54 @@
 <div fxLayout="column" fxLayoutAlign="center center">
     <h2 class="popular-restaurants-title">THE POPULAR RESTAURANTS IN EPICURE :</h2>
 
-    <swiper [config]="config" [(index)]="index" >
-            <div fxLayout="column" class="restaurant-element">
-                <img src="../../../assets/photos/claro@2x.jpg" class="popular-restaurant-img">
-                <div fxLayout="column" fxLayoutAlign="center center">
-                    <span class="popular-restaurant-title">Gilad</span>
-                    <span class="popular-restaurant-dish">Ran-Shmueli</span>
-                </div>
+    <swiper [config]="config" [(index)]="index" fxHide.gt-xs="true">
+        <div fxLayout="column" class="restaurant-element">
+            <img src="../../../assets/photos/claro@2x.jpg" class="popular-restaurant-img">
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <span class="popular-restaurant-title">Gilad</span>
+                <span class="popular-restaurant-dish">Ran-Shmueli</span>
             </div>
-            <div fxLayout="column" class="restaurant-element">
-                <img src="../../../assets/photos/claro@2x.jpg" class="popular-restaurant-img">
-                <div fxLayout="column" fxLayoutAlign="center center">
-                    <span class="popular-restaurant-title">Gilad</span>
-                    <span class="popular-restaurant-dish">Ran-Shmueli</span>
-                </div>
+        </div>
+        <div fxLayout="column" class="restaurant-element">
+            <img src="../../../assets/photos/claro@2x.jpg" class="popular-restaurant-img">
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <span class="popular-restaurant-title">Gilad</span>
+                <span class="popular-restaurant-dish">Ran-Shmueli</span>
             </div>
-            <div fxLayout="column" class="restaurant-element">
-                <img src="../../../assets/photos/claro@2x.jpg" class="popular-restaurant-img">
-                <div fxLayout="column" fxLayoutAlign="center center">
-                    <span class="popular-restaurant-title">Gilad</span>
-                    <span class="popular-restaurant-dish">Ran-Shmueli</span>
-                </div>
+        </div>
+        <div fxLayout="column" class="restaurant-element">
+            <img src="../../../assets/photos/claro@2x.jpg" class="popular-restaurant-img">
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <span class="popular-restaurant-title">Gilad</span>
+                <span class="popular-restaurant-dish">Ran-Shmueli</span>
             </div>
+        </div>
     </swiper>
+
+
+    <div fxLayout="row" fxLayoutAlign="center center" fxHide.xs="true" fxLayoutGap="10px">
+        <div fxLayout="column" class="restaurant-element">
+            <img src="../../../assets/photos/claro@2x.jpg" class="popular-restaurant-img">
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <span class="popular-restaurant-title">Gilad</span>
+                <span class="popular-restaurant-dish">Ran-Shmueli</span>
+            </div>
+        </div>
+        <div fxLayout="column" class="restaurant-element">
+            <img src="../../../assets/photos/claro@2x.jpg" class="popular-restaurant-img">
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <span class="popular-restaurant-title">Gilad</span>
+                <span class="popular-restaurant-dish">Ran-Shmueli</span>
+            </div>
+        </div>
+        <div fxLayout="column" class="restaurant-element">
+            <img src="../../../assets/photos/claro@2x.jpg" class="popular-restaurant-img">
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <span class="popular-restaurant-title">Gilad</span>
+                <span class="popular-restaurant-dish">Ran-Shmueli</span>
+            </div>
+        </div>
+    </div>
+
+    <span routerLink="/restaurants" class="all-restaurants" fxHide.xs="true" >All Restaurants >></span>
 </div>

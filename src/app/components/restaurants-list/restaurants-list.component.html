@@ -1,5 +1,5 @@
-<div fxLayout="row wrap" fxLayoutAlign="space-around center">
-    <div class="restaurant" fxLayout="column" *ngFor="let restaurant of listToDisplay">
+<div fxLayout="row wrap" fxLayoutAlign="space-around center" ngClass.gt-xs="desktop" >
+    <div routerLink="/order" class="restaurant" fxLayout="column" *ngFor="let restaurant of listToDisplay">
         <img [src]="restaurant.img">
         <span class="restaurant-name">{{restaurant.name}}</span>
         <span class="restaurant-chef">{{restaurant.chef}}</span>

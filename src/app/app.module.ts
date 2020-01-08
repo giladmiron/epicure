@@ -22,7 +22,7 @@ import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
   slidesPerView: 'auto',
-  spaceBetween: 140, 
+  spaceBetween: 350, 
   centeredSlides: true,
   navigation: true,
   pagination: true,
@@ -32,6 +32,9 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { RestaurantsComponent } from './pages/restaurants/restaurants.component';
 import { RestaurantsListComponent } from './components/restaurants-list/restaurants-list.component';
+import { OrderComponent } from './pages/order/order.component';
+import { RestaurantMenuComponent } from './components/restaurant-menu/restaurant-menu.component';
+import { RestaurantDetailsComponent } from './components/restaurant-details/restaurant-details.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +52,9 @@ import { RestaurantsListComponent } from './components/restaurants-list/restaura
     RestaurantsComponent,
     RestaurantsNavigationComponent,
     RestaurantsListComponent,
+    OrderComponent,
+    RestaurantMenuComponent,
+    RestaurantDetailsComponent,
   ],
   imports: [
     BrowserModule,

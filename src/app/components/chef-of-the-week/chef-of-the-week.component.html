@@ -1,23 +1,28 @@
-<div class="chef-of-the-week-container" fxLayout="column" fxLayoutAlign="center center">
-    <h2 class="chef-of-the-week-title"> CHEF OF THE WEEK :</h2>
-    <div class="chef-image">
-        <img class="Rectangle" src="../../../assets/photos/rectangle@2x.jpg">
-        <div class='chef-name' fxLayout="column" fxLayoutAlign="center center">
-            <h3>Yossi Shitrit</h3>
+<h2 class="chef-of-the-week-title" fxHide.xs="true" fxFlexAlign="center"> CHEF OF THE WEEK :</h2>
+<div class="chef-of-the-week-container" ngClass.gt-xs="desktop" fxLayout="column" fxLayoutAlign="center center" fxLayoutAlign.gt-xs="center start">
+    <h2 class="chef-of-the-week-title" fxHide.gt-xs="true" fxFlexAlign="center"> CHEF OF THE WEEK :</h2>
+    <div fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="space-between start" fxLayoutGap.gt-xs="20px">
+        <div class="chef-image">
+            <img class="Rectangle" src="../../../assets/photos/rectangle@2x.jpg">
+            <div class='chef-name' fxLayout="column" fxLayoutAlign="center center">
+                <h3>Yossi Shitrit</h3>
+            </div>
+        </div>
+        <div>
+            <p class="chef-of-the-week-description">
+                Chef Yossi Shitrit has been living and breathing his culinary dreams for more than two decades,
+                including
+                running the kitchen in his first restaurant, the fondly-remembered Violet, located in Moshav Udim.
+                Shitrit's
+                creativity and culinary acumen born of long experience are expressed in the every detail of each and
+                every dish.
+            </p>
         </div>
     </div>
-    <div>
-        <p class="chef-of-the-week-description">
-            Chef Yossi Shitrit has been living and breathing his culinary dreams for more than two decades, including
-            running the kitchen in his first restaurant, the fondly-remembered Violet, located in Moshav Udim. Shitrit's
-            creativity and culinary acumen born of long experience are expressed in the every detail of each and
-            every dish.
-        </p>
-        <p class="chef-restaurants-title"> Yossi's restaurants :</p>
-    </div>
 
-
-    <swiper [config]="config" [(index)]="index">
+    <p class="chef-restaurants-title" fxFlexAlign.xs="start"> Yossi's restaurants :</p>
+    
+    <swiper [config]="config" [(index)]="index" fxHide.gt-xs="true">
         <div class="restaurant-element">
             <img class="restaurant-img" src="../../../assets/photos/screen-shot-2019-01-06-at-10-55-45@2x.jpg">
             <div fxLayout="column" fxLayoutAlign="center center">
@@ -34,4 +39,24 @@
                 <span class="restaurant-name">Onza</span> </div>
         </div>
     </swiper>
+
+    <div fxLayout="row" fxLayoutAlign="center center" fxHide.xs="true" fxLayoutGap="10px">
+        <!-- data = {img:'https://...', title:'example'} -->
+        <!-- <yossi-menu-app [data]="data"></yossi-menu-app> -->
+        <div class="restaurant-element">
+            <img class="restaurant-img" src="/assets/photos/screen-shot-2019-01-06-at-10-55-45@2x.jpg">
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <span class="restaurant-name">Onza</span> </div>
+        </div>
+        <div class="restaurant-element">
+            <img class="restaurant-img" src="/assets/photos/screen-shot-2019-01-06-at-10-55-45@2x.jpg">
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <span class="restaurant-name">Onza</span> </div>
+        </div>
+        <div class="restaurant-element">
+            <img class="restaurant-img" src="/assets/photos/screen-shot-2019-01-06-at-10-55-45@2x.jpg">
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <span class="restaurant-name">Onza</span> </div>
+        </div>
+    </div>
 </div>

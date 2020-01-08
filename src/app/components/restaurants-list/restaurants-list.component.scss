@@ -28,3 +28,16 @@
        text-align: center;
        margin-bottom: 8px;
    }
+
+   .desktop{
+       display: grid !important;
+       grid-template-columns: repeat(3,300px);
+       justify-items: center !important;
+
+       .restaurant{
+           width: 200px;
+       }
+    .restaurant img{
+        width: 200px;
+    }
+   }
