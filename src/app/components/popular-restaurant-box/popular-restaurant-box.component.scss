@@ -1,15 +1,13 @@
 
-  .restaurant-element {
-    width: 206px !important;
-    height: 338px !important;
+.restaurant-element {
+    width: 256px;
+    height: 338px ;
     background-color: rgb(247,224,178,0.4)
   }
 
   .popular-restaurant-img {
-    width: 206px;
+    width: 256px;
     height: 224px;
-    object-fit: contain;
-    top: 0;
   }
 
   .popular-restaurant-title {
@@ -30,13 +28,13 @@
   }
 
 
-  .desktop{
+  .mobile{
+.restaurant-element {
+  width: 236px !important;
+  height: 360px !important;
+  }
 
-    .restaurant-element {
-      width: 250px !important;
-    }
-    .popular-restaurant-img {
-      width: 250px !important;
-      object-fit: fill;
-    }
+  .popular-restaurant-img {
+    width: 236px !important;
+  }
 }

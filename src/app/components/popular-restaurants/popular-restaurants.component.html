@@ -1,15 +1,8 @@
-<div fxLayout="column" fxLayoutAlign="center center">
-        <h2 class="popular-restaurants-title">THE POPULAR RESTAURANTS IN EPICURE :</h2>
+    <div fxLayout="column" fxLayoutAlign="center center">
+    <h2 class="popular-restaurants-title" ngClass.gt-xs="desktop-title">THE POPULAR RESTAURANTS IN EPICURE :</h2>
+        
+    <app-popular-restaurant-box [data]="popularRestaurants"></app-popular-restaurant-box>
 
-        <swiper [config]="config" [(index)]="index" fxHide.gt-xs="true">
-            <app-popular-restaurant-box [data]="popularRestaurants"></app-popular-restaurant-box>
-        </swiper>
-
-
-        <div fxHide.xs="true">
-            <app-popular-restaurant-box [data]="popularRestaurants"></app-popular-restaurant-box>
-        </div>
-
-        <span routerLink="/restaurants" fxFlexAlign="end" class="all-restaurants" fxHide.xs="true">All Restaurants
-            >></span>
-</div>
+    <span routerLink="/restaurants" class="all-restaurants" fxHide.xs="true">All Restaurants
+        >></span>
+    </div>

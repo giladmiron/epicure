@@ -1,8 +1,7 @@
 .popular-restaurants-title {
-    width: 300px;
     height: 22px;
     font-family: HelveticaNeue-Thin;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 100;
     font-stretch: normal;
     font-style: normal;
@@ -13,39 +12,9 @@
     margin-top: 65px;
   }
 
-  swiper{
-    width: 100vw;
-  }
-
-  .restaurant-element {
-    width: 206px !important;
-    height: 338px !important;
-    background-color: rgb(247,224,178,0.4)
-  }
-
-  .popular-restaurant-img {
-    width: 206px;
-    height: 224px;
-    object-fit: contain;
-    top: 0;
-  }
-
-  .popular-restaurant-title {
-    margin-top: 22px;
-    height: 29px;
-    font-family: HelveticaNeue;
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: 1.67px;
-    color: black;
-  }
-  
-  .popular-restaurant-chef {
-    font-family: HelveticaNeue-thin;
-    font-size: 20px;
-    letter-spacing: 1.33px;
-    color: black;
-  }
+.content-container{
+  position: relative;
+}
 
   .all-restaurants{
     font-weight: bold;
@@ -54,13 +23,10 @@
     letter-spacing: 2px;
   }
 
-  .desktop{
+  app-popular-restaurant-box{
+    width: 100vw;
+  }
 
-    .restaurant-element {
-      width: 250px !important;
-    }
-    .popular-restaurant-img {
-      width: 250px !important;
-      object-fit: fill;
-    }
-}
+  .desktop-title{
+    font-size: 18px;
+  }

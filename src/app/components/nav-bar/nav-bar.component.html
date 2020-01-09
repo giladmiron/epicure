@@ -1,12 +1,8 @@
-<div *ngIf="menuHide"
- class="nav-bar"
-  ngClass.gt-xs="desktop"
-   fxLayout='row'
-    fxLayoutAlign="space-between center" 
-    fxLayoutAlign.gt-xs="space-around center"
-    fxLayout.gt-xs="row-reverse">
+<div *ngIf="menuHide" class="nav-bar" ngClass.gt-xs="desktop" fxLayout='row' fxLayoutAlign="space-between center" fxLayoutAlign.gt-xs="space-around center" fxLayout.gt-xs="row-reverse">
+    
     <img src="../../../assets/icons/group-13.svg" class="burger-icon" (click)="menuStateChange()" fxHide.gt-xs="true">
     <img src="../../../assets/photos/group-10@2x.png" fxHide.gt-xs="true" class="nav-logo" routerLink="/home">
+
     <div fxLayoutGap="20px" fxLayout='row' fxLayoutAlign="center center">
         <div fxShow.xs="false" class="Search-area" fxLayout="row" fxLayoutAlign="center center">
             <input class="Search-for-restauran" placeholder="Search for restaurant cuisine, chef">
@@ -16,12 +12,14 @@
         <img src="../../../assets/icons/user-icon-copy.svg" class="nav-icon">
         <img src="../../../assets/icons/group-2-copy.svg" class="nav-icon">
     </div>
+
     <div fxLayoutGap="20px" fxLayoutAlign="center center" fxLayout='row' fxShow.xs="false">
         <img routerLink="/home" src="../../../assets/photos/group-10@2x.png" class="nav-logo-desktop" routerLink="/home">
         <span routerLink="/home" class="web-name">EPICURE</span>
         <span routerLink="/restaurants" class="nav-span">Restaurants</span>
         <span class="nav-span">Chefs</span>
     </div>
+
 </div>
 
 <app-menu (menuStateChange)="menuStateChange($event)" *ngIf="!menuHide"></app-menu>

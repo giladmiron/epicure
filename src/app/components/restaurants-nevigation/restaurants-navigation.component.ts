@@ -14,6 +14,8 @@ export class RestaurantsNavigationComponent implements OnInit {
     OpenNow: false
   }
 
+  selectedCategory: number;
+
   listToDisplay: { id: number, img: string, name: string, chef: string }[] = [
     {
       id: 1,
@@ -94,18 +96,18 @@ export class RestaurantsNavigationComponent implements OnInit {
   ngOnInit() {
   }
 
-  changeList(event: any) {
-    let term = event.target.innerHTML.trim().replace(" ", "")
-    let newNavState = {
-      All: false,
-      New: false,
-      MostPopular: false,
-      OpenNow: false
-    }
-    newNavState[term] = true
-    this.navState = newNavState
+  changeList(category: number) {
+    this.selectedCategory = category
+    // let term = event.target.innerHTML.trim().replace(" ", "")
+    // let newNavState = {
+    //   All: false,
+    //   New: false,
+    //   MostPopular: false,
+    //   OpenNow: false
+    // }
+    // newNavState[term] = true
+    // this.navState = newNavState
   }
 
-  
 
 }
