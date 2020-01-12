@@ -37,6 +37,8 @@ import { RestaurantMenuComponent } from './components/restaurant-menu/restaurant
 import { RestaurantDetailsComponent } from './components/restaurant-details/restaurant-details.component';
 import { PopularRestaurantBoxComponent } from './components/popular-restaurant-box/popular-restaurant-box.component';
 import { DishPopupComponent } from './components/dish-popup/dish-popup.component';
+import { SignatureDishesBoxComponent } from './components/signature-dishes-box/signature-dishes-box.component';
+import { ChefRestaurantsBoxComponent } from './components/chef-restaurants-box/chef-restaurants-box.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +61,8 @@ import { DishPopupComponent } from './components/dish-popup/dish-popup.component
     RestaurantDetailsComponent,
     PopularRestaurantBoxComponent,
     DishPopupComponent,
+    SignatureDishesBoxComponent,
+    ChefRestaurantsBoxComponent,
   ],
   imports: [
     BrowserModule,

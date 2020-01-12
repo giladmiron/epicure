@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChefOfTheWeekComponent implements OnInit {
 
+  chefRestaurants: { img: string, resName: string }[] = [{
+    img: '../../../assets/photos/screen-shot-2019-01-06-at-10-55-45@2x.jpg',
+    resName: 'Onza'
+  }
+    , {
+    img: '../../../assets/photos/screen-shot-2019-01-06-at-10-55-45@2x.jpg',
+    resName: 'Onza'
+  }, {
+    img: '../../../assets/photos/screen-shot-2019-01-06-at-10-55-45@2x.jpg',
+    resName: 'Onza'
+  }]
+
   constructor() { }
 
   ngOnInit() {

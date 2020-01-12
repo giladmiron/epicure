@@ -1,0 +1,41 @@
+<swiper [config]="config" [(index)]="index" fxHide.gt-xs="true">
+    <div fxLayout="column" fxLayoutAlign="center center" *ngFor="let dish of signatureDishes">
+        <h3 class="signature-dish-restaurant-name">{{dish.resName}}</h3>
+        <div class="signature-container">
+            <img class="dish-image" [src]=dish.img>
+            <div class="description-container" fxLayout="column" fxLayoutAlign="center center">
+                <span class="signature-dish-name">{{dish.dishName}}</span>
+                <span class="signature-dish-description">{{dish.ingradients}}
+                </span>
+                <img class="dish-icon" src="../../../assets/icons/group-2.svg">
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
+                    <div class="Line-4"></div>
+                    <img class="ils" src="../../../assets/icons/ils.svg">
+                    <span class="price">{{dish.price}}</span>
+                    <div class="Line-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</swiper>
+
+<div fxLayout="row" fxLayoutAlign="center center" fxHide.xs="true" fxLayoutGap="10px">
+    <div fxLayout="column" fxLayoutAlign="center center" *ngFor="let dish of signatureDishes">
+        <h3 class="signature-dish-restaurant-name">{{dish.resName}}</h3>
+        <div class="signature-container">
+            <img class="dish-image" [src]=dish.img>
+            <div class="description-container" fxLayout="column" fxLayoutAlign="center center">
+                <span class="signature-dish-name">{{dish.dishName}}</span>
+                <span class="signature-dish-description">{{dish.ingradients}}
+                </span>
+                <img class="dish-icon" src="../../../assets/icons/group-2.svg">
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
+                    <div class="Line-4"></div>
+                    <img class="ils" src="../../../assets/icons/ils.svg">
+                    <span class="price">{{dish.price}}</span>
+                    <div class="Line-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
