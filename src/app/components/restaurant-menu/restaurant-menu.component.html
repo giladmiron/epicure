@@ -1,150 +1,44 @@
-<div fxLayout="column" fxLayoutAlign="center cnter">
+<div fxLayout="column" fxLayoutAlign="center cnter" ngClass.gt-xs="desktop">
 
     <div class="category" id="breakfast" fxLayout="row" fxLayoutAlign="space-between center">
         <div class="line"></div>
-        <span class="category-title" > BREAKFAST</span>
+        <span class="category-title"> BREAKFAST</span>
         <div class="line"></div>
     </div>
-    <div class="category-container">
-        <div class="dish-container">            
-            <img class="dish-image" src="../../../assets/photos/rectangle@2x.png">
-            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px" >
-                <span class="signature-dish-name">Pad Ki Mao</span>
-                <span class="signature-dish-description">Shrimps, Glass Noodles, Kemiri Nuts, Shallots,
-                    Lemon Grass, Magic
-                    Chili Brown Coconut
+    <div class="category-container" fxLayout.gt-xs="row wrap" fxLayoutAlign.gt-xs="space-around center">
+        <div class="dish-container" *ngFor="let dish of breakfast" (click)="PopupStateChange(dish)">
+            <img class="dish-image" [src]=dish.img>
+            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px">
+                <span class="signature-dish-name">{{dish.name}}</span>
+                <span class="signature-dish-description">{{dish.ingredients}}
                 </span>
                 <img class="dish-icon" src="../../../assets/icons/group-2.svg">
                 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
                     <div class="Line-4"></div>
                     <img class="ils" src="../../../assets/icons/ils.svg">
-                    <span class="price">88</span>
-                    <div class="Line-4"></div>
-                </div>
-            </div>
-        </div>
-        <div class="dish-container">            
-            <img class="dish-image" src="../../../assets/photos/rectangle@2x.png">
-            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px" >
-                <span class="signature-dish-name">Pad Ki Mao</span>
-                <span class="signature-dish-description">Shrimps, Glass Noodles, Kemiri Nuts, Shallots,
-                    Lemon Grass, Magic
-                    Chili Brown Coconut
-                </span>
-                <img class="dish-icon" src="../../../assets/icons/group-2.svg">
-                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
-                    <div class="Line-4"></div>
-                    <img class="ils" src="../../../assets/icons/ils.svg">
-                    <span class="price">88</span>
-                    <div class="Line-4"></div>
-                </div>
-            </div>
-        </div>
-        <div class="dish-container">            
-            <img class="dish-image" src="../../../assets/photos/rectangle@2x.png">
-            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px" >
-                <span class="signature-dish-name">Pad Ki Mao</span>
-                <span class="signature-dish-description">Shrimps, Glass Noodles, Kemiri Nuts, Shallots,
-                    Lemon Grass, Magic
-                    Chili Brown Coconut
-                </span>
-                <img class="dish-icon" src="../../../assets/icons/group-2.svg">
-                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
-                    <div class="Line-4"></div>
-                    <img class="ils" src="../../../assets/icons/ils.svg">
-                    <span class="price">88</span>
-                    <div class="Line-4"></div>
-                </div>
-            </div>
-        </div>
-        <div class="dish-container">            
-            <img class="dish-image" src="../../../assets/photos/rectangle@2x.png">
-            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px" >
-                <span class="signature-dish-name">Pad Ki Mao</span>
-                <span class="signature-dish-description">Shrimps, Glass Noodles, Kemiri Nuts, Shallots,
-                    Lemon Grass, Magic
-                    Chili Brown Coconut
-                </span>
-                <img class="dish-icon" src="../../../assets/icons/group-2.svg">
-                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
-                    <div class="Line-4"></div>
-                    <img class="ils" src="../../../assets/icons/ils.svg">
-                    <span class="price">88</span>
+                    <span class="price">{{dish.price}}</span>
                     <div class="Line-4"></div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="category" id="lunch" fxLayout="row" fxLayoutAlign="space-between center" >
+    <div class="category" id="lunch" fxLayout="row" fxLayoutAlign="space-between center">
         <div class="line"></div>
         <span class="category-title"> LUNCH </span>
         <div class="line"></div>
     </div>
-    <div class="category-container">
-        <div class="dish-container">            
-            <img class="dish-image" src="../../../assets/photos/rectangle@2x.png">
-            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px" >
-                <span class="signature-dish-name">Pad Ki Mao</span>
-                <span class="signature-dish-description">Shrimps, Glass Noodles, Kemiri Nuts, Shallots,
-                    Lemon Grass, Magic
-                    Chili Brown Coconut
+    <div class="category-container" fxLayout.gt-xs="row wrap" fxLayoutAlign.gt-xs="space-around center">
+        <div class="dish-container" *ngFor="let dish of breakfast" (click)="PopupStateChange(dish)">
+            <img class="dish-image" [src]=dish.img>
+            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px">
+                <span class="signature-dish-name">{{dish.name}}</span>
+                <span class="signature-dish-description">{{dish.ingredients}}
                 </span>
                 <img class="dish-icon" src="../../../assets/icons/group-2.svg">
                 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
                     <div class="Line-4"></div>
                     <img class="ils" src="../../../assets/icons/ils.svg">
-                    <span class="price">88</span>
-                    <div class="Line-4"></div>
-                </div>
-            </div>
-        </div>
-        <div class="dish-container">            
-            <img class="dish-image" src="../../../assets/photos/rectangle@2x.png">
-            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px" >
-                <span class="signature-dish-name">Pad Ki Mao</span>
-                <span class="signature-dish-description">Shrimps, Glass Noodles, Kemiri Nuts, Shallots,
-                    Lemon Grass, Magic
-                    Chili Brown Coconut
-                </span>
-                <img class="dish-icon" src="../../../assets/icons/group-2.svg">
-                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
-                    <div class="Line-4"></div>
-                    <img class="ils" src="../../../assets/icons/ils.svg">
-                    <span class="price">88</span>
-                    <div class="Line-4"></div>
-                </div>
-            </div>
-        </div>
-        <div class="dish-container">            
-            <img class="dish-image" src="../../../assets/photos/rectangle@2x.png">
-            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px" >
-                <span class="signature-dish-name">Pad Ki Mao</span>
-                <span class="signature-dish-description">Shrimps, Glass Noodles, Kemiri Nuts, Shallots,
-                    Lemon Grass, Magic
-                    Chili Brown Coconut
-                </span>
-                <img class="dish-icon" src="../../../assets/icons/group-2.svg">
-                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
-                    <div class="Line-4"></div>
-                    <img class="ils" src="../../../assets/icons/ils.svg">
-                    <span class="price">88</span>
-                    <div class="Line-4"></div>
-                </div>
-            </div>
-        </div>
-        <div class="dish-container">            
-            <img class="dish-image" src="../../../assets/photos/rectangle@2x.png">
-            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px" >
-                <span class="signature-dish-name">Pad Ki Mao</span>
-                <span class="signature-dish-description">Shrimps, Glass Noodles, Kemiri Nuts, Shallots,
-                    Lemon Grass, Magic
-                    Chili Brown Coconut
-                </span>
-                <img class="dish-icon" src="../../../assets/icons/group-2.svg">
-                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
-                    <div class="Line-4"></div>
-                    <img class="ils" src="../../../assets/icons/ils.svg">
-                    <span class="price">88</span>
+                    <span class="price">{{dish.price}}</span>
                     <div class="Line-4"></div>
                 </div>
             </div>
@@ -155,74 +49,23 @@
         <span class="category-title"> DINNER</span>
         <div class="line"></div>
     </div>
-    <div class="category-container">
-        <div class="dish-container">            
-            <img class="dish-image" src="../../../assets/photos/rectangle@2x.png">
-            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px" >
-                <span class="signature-dish-name">Pad Ki Mao</span>
-                <span class="signature-dish-description">Shrimps, Glass Noodles, Kemiri Nuts, Shallots,
-                    Lemon Grass, Magic
-                    Chili Brown Coconut
+    <div class="category-container" fxLayout.gt-xs="row wrap" fxLayoutAlign.gt-xs="space-around center">
+        <div class="dish-container" *ngFor="let dish of breakfast" (click)="PopupStateChange(dish)">
+            <img class="dish-image" [src]=dish.img>
+            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px">
+                <span class="signature-dish-name">{{dish.name}}</span>
+                <span class="signature-dish-description">{{dish.ingredients}}
                 </span>
                 <img class="dish-icon" src="../../../assets/icons/group-2.svg">
                 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
                     <div class="Line-4"></div>
                     <img class="ils" src="../../../assets/icons/ils.svg">
-                    <span class="price">88</span>
-                    <div class="Line-4"></div>
-                </div>
-            </div>
-        </div>
-        <div class="dish-container">            
-            <img class="dish-image" src="../../../assets/photos/rectangle@2x.png">
-            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px" >
-                <span class="signature-dish-name">Pad Ki Mao</span>
-                <span class="signature-dish-description">Shrimps, Glass Noodles, Kemiri Nuts, Shallots,
-                    Lemon Grass, Magic
-                    Chili Brown Coconut
-                </span>
-                <img class="dish-icon" src="../../../assets/icons/group-2.svg">
-                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
-                    <div class="Line-4"></div>
-                    <img class="ils" src="../../../assets/icons/ils.svg">
-                    <span class="price">88</span>
-                    <div class="Line-4"></div>
-                </div>
-            </div>
-        </div>
-        <div class="dish-container">            
-            <img class="dish-image" src="../../../assets/photos/rectangle@2x.png">
-            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px" >
-                <span class="signature-dish-name">Pad Ki Mao</span>
-                <span class="signature-dish-description">Shrimps, Glass Noodles, Kemiri Nuts, Shallots,
-                    Lemon Grass, Magic
-                    Chili Brown Coconut
-                </span>
-                <img class="dish-icon" src="../../../assets/icons/group-2.svg">
-                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
-                    <div class="Line-4"></div>
-                    <img class="ils" src="../../../assets/icons/ils.svg">
-                    <span class="price">88</span>
-                    <div class="Line-4"></div>
-                </div>
-            </div>
-        </div>
-        <div class="dish-container">            
-            <img class="dish-image" src="../../../assets/photos/rectangle@2x.png">
-            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px" >
-                <span class="signature-dish-name">Pad Ki Mao</span>
-                <span class="signature-dish-description">Shrimps, Glass Noodles, Kemiri Nuts, Shallots,
-                    Lemon Grass, Magic
-                    Chili Brown Coconut
-                </span>
-                <img class="dish-icon" src="../../../assets/icons/group-2.svg">
-                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
-                    <div class="Line-4"></div>
-                    <img class="ils" src="../../../assets/icons/ils.svg">
-                    <span class="price">88</span>
+                    <span class="price">{{dish.price}}</span>
                     <div class="Line-4"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<app-dish-popup [dishDetails]=dishDetails *ngIf="showPopup" (hidePopup)="PopupStateChange()"></app-dish-popup>

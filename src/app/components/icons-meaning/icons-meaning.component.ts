@@ -7,6 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IconsMeaningComponent implements OnInit {
 
+  icons = [{
+    class: 'spicy-icon',
+    src: '../../../assets/icons/group-2.svg',
+    content: 'SPICY'
+  }, {
+    class: 'vegiterian-icon',
+    src: '../../../assets/icons/vegiterian-icon.svg',
+    content: 'VEGITARIAN'
+  }, {
+    class: 'spicy-icon',
+    src: '../../../assets/icons/group-2.svg',
+    content: 'VEGAN',
+  }]
+
   constructor() { }
 
   ngOnInit() {

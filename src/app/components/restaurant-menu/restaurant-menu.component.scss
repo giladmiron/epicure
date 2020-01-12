@@ -89,3 +89,19 @@
   height: 7px;
   object-fit: contain;
 }
+
+.desktop{
+  .line{
+    width: 40%;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .category{
+    position: relative;
+  }
+
+  .category-title{
+  font-size: 24px;
+  }
+}

@@ -36,6 +36,7 @@ import { OrderComponent } from './pages/order/order.component';
 import { RestaurantMenuComponent } from './components/restaurant-menu/restaurant-menu.component';
 import { RestaurantDetailsComponent } from './components/restaurant-details/restaurant-details.component';
 import { PopularRestaurantBoxComponent } from './components/popular-restaurant-box/popular-restaurant-box.component';
+import { DishPopupComponent } from './components/dish-popup/dish-popup.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { PopularRestaurantBoxComponent } from './components/popular-restaurant-b
     RestaurantMenuComponent,
     RestaurantDetailsComponent,
     PopularRestaurantBoxComponent,
+    DishPopupComponent,
   ],
   imports: [
     BrowserModule,

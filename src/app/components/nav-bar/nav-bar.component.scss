@@ -3,7 +3,7 @@ $icons-dimention: 18px;
 $icons-fit: contain;
 
 .nav-bar {
-    width: 95vw;
+    width: 100vw;
     height: 45px;
     background-color: #ffffff;
     box-sizing: border-box;
@@ -29,6 +29,11 @@ $icons-fit: contain;
     object-fit: contain;
     position: absolute;
     left: 44%;
+    outline: none;
+  }
+
+  span{
+    outline: none;
   }
 
   .desktop{
@@ -38,6 +43,7 @@ $icons-fit: contain;
     font-weight: 100;
     letter-spacing: 1.35px;
     color: var(--black);
+    outline: none;
     }
 
     .nav-span{
@@ -101,5 +107,6 @@ $icons-fit: contain;
     .nav-logo-desktop {
       width: 31px;
       height: 30px;
+      outline: none;
     }
   }

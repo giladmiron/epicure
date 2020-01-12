@@ -1,0 +1,13 @@
+<div class="popup-container" ngClass.gt-xs="desktop">
+
+    <div class="popup-header" fxLayout="column" fxLayoutAlign="center start">
+        <img class="X" src="../../../assets/icons/x.svg" (click)="hideWindow()">
+    </div>
+
+    <div class="popup-content" fxLayout="column" fxLayoutAlign="center center">
+        <img [src]="dishDetails.img" class="dish-img">
+        <span>{{dishDetails.name}}</span>
+        <span>{{dishDetails.ingredients}}</span>
+    </div>
+
+</div>

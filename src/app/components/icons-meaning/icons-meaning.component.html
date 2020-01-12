@@ -1,18 +1,10 @@
 <div class="icons-rectangle" fxLayout="column" fxLayoutAlign="space-around center">
     <span class="icons-meaning-title">THE MEANING OF OUR ICONS :</span>
-    <div class="icons" fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutAlign.gt-xs="center center" fxLayoutGap.gt-xs="35px">
-
-        <div fxLayout="column" fxLayoutAlign="center center">
-            <img class="spicy-icon" src="../../../assets/icons/group-2.svg">
-            <span class="icon-meaning">SPICY</span>
-        </div>
-        <div fxLayout="column" fxLayoutAlign="center center">
-            <img class="vegiterian-icon" src="../../../assets/icons/vegiterian-icon.svg">
-            <span class="icon-meaning vegitarian">VEGITARIAN</span>
-        </div>
-        <div fxLayout="column" fxLayoutAlign="center center">
-            <img class="spicy-icon" src="../../../assets/icons/group-2.svg">
-            <span class="icon-meaning">VEGAN</span>
+    <div class="icons" fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutAlign.gt-xs="center center"
+        fxLayoutGap.gt-xs="35px">
+        <div *ngFor="let icon of icons" fxLayout="column" fxLayoutAlign="center center">
+            <img class="icon.class" [src]="icon.src">
+            <span class="icon-meaning">{{icon.content}}</span>
         </div>
     </div>
 </div>

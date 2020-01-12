@@ -30,14 +30,14 @@
    }
 
    .desktop{
-       display: grid !important;
-       grid-template-columns: repeat(3,300px);
-       justify-items: center !important;
-
        .restaurant{
-           width: 240px;
+           width: 270px;
+           height: 220px;
+           margin:20px;
        }
     .restaurant img{
-        width: 240px;
+        width: 270px;
+        height: 136px;
     }
+    
    }
