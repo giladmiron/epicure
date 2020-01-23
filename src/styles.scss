@@ -1,25 +1,26 @@
-// - - - - - - - - - - veriables decleration - - - - - - - - - - 
+// - - - - - - - - - - veriables decleration - - - - - - - - - -
 $base-color-white: #ffffff;
 $base-color-gray: #fafafa;
 $secondary-color: #f7e0b2;
 $black: #000000;
 
-
-// - - - - - - - - - - fonts decleration - - - - - - - - - - 
-@font-face{
-    font-family: 'HelveticaNeue-Thin' ;
-    src: url('./assets/fonts/HelveticaNeue\ Thin.ttf')
-  }  
-
-  @font-face{
-    font-family: 'HelveticaNeue' ;
-    src: url('./assets/fonts/HelveticaNeue\ Light.ttf')
-  }  
-
-body{
-    margin: 0;
-    padding: 0;
-
-
+// - - - - - - - - - - fonts decleration - - - - - - - - - -
+@font-face {
+  font-family: "HelveticaNeue-Thin";
+  src: url("./assets/fonts/HelveticaNeue\ Thin.ttf");
 }
 
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("./assets/fonts/HelveticaNeue\ Light.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  outline: none;
+}

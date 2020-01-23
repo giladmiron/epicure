@@ -6,11 +6,11 @@
         <div class="line"></div>
     </div>
     <div class="category-container" fxLayout.gt-xs="row wrap" fxLayoutAlign.gt-xs="space-around center">
-        <div class="dish-container" *ngFor="let dish of breakfast" (click)="PopupStateChange(dish)">
+        <div class="dish-container" *ngFor="let dish of menu.breakfast" (click)="PopupStateChange(dish)">
             <img class="dish-image" [src]=dish.img>
-            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px">
+            <div class="description-container" fxLayout="column" fxLayoutAlign="space-between center" fxLayoutGap="14px">
                 <span class="signature-dish-name">{{dish.name}}</span>
-                <span class="signature-dish-description">{{dish.ingredients}}
+                <span class="signature-dish-description">{{dish.ingradients}}
                 </span>
                 <img class="dish-icon" src="../../../assets/icons/group-2.svg">
                 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
@@ -28,11 +28,11 @@
         <div class="line"></div>
     </div>
     <div class="category-container" fxLayout.gt-xs="row wrap" fxLayoutAlign.gt-xs="space-around center">
-        <div class="dish-container" *ngFor="let dish of breakfast" (click)="PopupStateChange(dish)">
+        <div class="dish-container" *ngFor="let dish of menu.lunch" (click)="PopupStateChange(dish)">
             <img class="dish-image" [src]=dish.img>
-            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px">
+            <div class="description-container" fxLayout="column" fxLayoutAlign="space-between center" fxLayoutGap="14px">
                 <span class="signature-dish-name">{{dish.name}}</span>
-                <span class="signature-dish-description">{{dish.ingredients}}
+                <span class="signature-dish-description">{{dish.ingradients}}
                 </span>
                 <img class="dish-icon" src="../../../assets/icons/group-2.svg">
                 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
@@ -50,11 +50,11 @@
         <div class="line"></div>
     </div>
     <div class="category-container" fxLayout.gt-xs="row wrap" fxLayoutAlign.gt-xs="space-around center">
-        <div class="dish-container" *ngFor="let dish of breakfast" (click)="PopupStateChange(dish)">
+        <div class="dish-container" *ngFor="let dish of menu.dinner" (click)="PopupStateChange(dish)">
             <img class="dish-image" [src]=dish.img>
-            <div class="description-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="14px">
+            <div class="description-container" fxLayout="column" fxLayoutAlign="space-between center" fxLayoutGap="14px">
                 <span class="signature-dish-name">{{dish.name}}</span>
-                <span class="signature-dish-description">{{dish.ingredients}}
+                <span class="signature-dish-description">{{dish.ingradients}}
                 </span>
                 <img class="dish-icon" src="../../../assets/icons/group-2.svg">
                 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">

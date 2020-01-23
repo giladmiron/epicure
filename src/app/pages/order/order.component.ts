@@ -1,5 +1,7 @@
 import { RestaurantMenuComponent } from './../../components/restaurant-menu/restaurant-menu.component';
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { RestaurantsService } from './../../services/restaurants.service';
 
 @Component({
   selector: 'app-order',
@@ -8,11 +10,23 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class OrderComponent implements OnInit {
 
-  constructor() { }
+  menuId = ''
+  menu: {}
+
+  constructor(private activatedRoute: ActivatedRoute,
+    private restaurantsService: RestaurantsService ) { 
+    this.activatedRoute.params.subscribe(params=> {
+      this.menuId = params.menuId
+    })
+  }
 
 @ViewChild(RestaurantMenuComponent,{static: false}) child: RestaurantMenuComponent
 
   ngOnInit() {
+    this.restaurantsService.getMenu(this.menuId).subscribe(data=> {
+      this.menu = data
+      console.log(data)
+    })
   }
 
   invokeScroll(category:string){

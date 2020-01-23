@@ -19,10 +19,12 @@ import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 
+import { HttpClientModule } from '@angular/common/http';
+
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
   slidesPerView: 'auto',
-  spaceBetween: 350, 
+  spaceBetween: 350,
   centeredSlides: true,
   navigation: true,
   pagination: true,
@@ -69,6 +71,7 @@ import { ChefRestaurantsBoxComponent } from './components/chef-restaurants-box/c
     AppRoutingModule,
     FlexLayoutModule,
     SwiperModule,
+    HttpClientModule,
   ],
   providers: [{
     provide: SWIPER_CONFIG,

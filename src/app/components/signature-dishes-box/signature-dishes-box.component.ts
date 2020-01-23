@@ -8,12 +8,11 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SignatureDishesBoxComponent implements OnInit {
 
   @Input() data;
-  signatureDishes: { id: number, img: string, resName: string, dishName: string,ingredients: string, price: number, icons: [string] }[] = []
+  signatureDishes: { id: number, img: string, resName: string, dishName: string, ingredients: string, price: number, icons: [string] }[] = []
 
   constructor() { }
 
   ngOnInit() {
     this.signatureDishes = this.data
-    console.log(this.signatureDishes)
   }
 }
