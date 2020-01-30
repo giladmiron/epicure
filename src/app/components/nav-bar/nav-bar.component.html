@@ -15,8 +15,7 @@
     </div>
 
     <div fxLayoutGap="20px" fxLayoutAlign="center center" fxLayout='row' fxShow.xs="false">
-        <img routerLink="/home" src="../../../assets/photos/group-10@2x.png" class="nav-logo-desktop"
-            routerLink="/home">
+        <img routerLink="/home" src="../../../assets/photos/group-10@2x.png" class="nav-logo-desktop">
         <span routerLink="/home" class="web-name">EPICURE</span>
         <div fxLayout="column" fxLayoutAlign="center center">
             <span routerLink="/restaurants" class="nav-span">Restaurants</span>
@@ -27,4 +26,4 @@
 
 </div>
 
-<app-menu (menuStateChange)="menuStateChange($event)" *ngIf="!menuHide"></app-menu>
+<app-menu (menuStateChange)="menuStateChange()" *ngIf="!menuHide"></app-menu>

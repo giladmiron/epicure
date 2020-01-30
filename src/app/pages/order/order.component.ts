@@ -25,7 +25,6 @@ export class OrderComponent implements OnInit {
   ngOnInit() {
     this.restaurantsService.getMenu(this.menuId).subscribe(data=> {
       this.menu = data
-      console.log(data)
     })
   }
 

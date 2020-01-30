@@ -7,7 +7,7 @@ import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 })
 export class RestaurantDetailsComponent implements OnInit {
 
-  categoryStatus: {} = {
+  categoryStatus:  any= {
     Breakfast: true,
     Lunch: false,
     Dinner: false

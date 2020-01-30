@@ -12,7 +12,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class RestaurantsService {
 
-  url: string = 'http://localhost:3000/'
+  url: string = 'http://epicure-gilad.moveodevelop.com/api/'
 
   constructor(private http: HttpClient) { }
 

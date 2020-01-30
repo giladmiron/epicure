@@ -1,19 +1,27 @@
-<div fxHide.xs="true" fxLayout="row" fxLayoutGap.gt-xs="30px" fxLayoutAlign="center center">
-        <div class="restaurant-element" *ngFor="let restaurant of popularRestaurants">
-            <img src={{restaurant.img}} class="popular-restaurant-img">
-            <div fxLayout="column" fxLayoutAlign="center center">
-                <span class="popular-restaurant-title">{{restaurant.title}}</span>
-                <span class="popular-restaurant-chef">{{restaurant.chef}}</span>
-            </div>
+<div
+  fxHide.xs="true"
+  fxLayout="row"
+  fxLayoutGap.gt-xs="30px"
+  fxLayoutAlign="center center"
+>
+  <div class="restaurant-element" *ngFor="let restaurant of popularRestaurants">
+    <img src="{{ restaurant.img }}" class="popular-restaurant-img" />
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <span class="popular-restaurant-title">{{ restaurant.title }}</span>
+      <span class="popular-restaurant-chef">{{ restaurant.chef }}</span>
     </div>
+  </div>
 </div>
 
-<swiper [config]="config" [(index)]="index" fxHide.gt-xs="true" ngClass.xs="mobile">
-    <div *ngFor="let restaurant of popularRestaurants" class="restaurant-element">
-        <img src={{restaurant.img}} class="popular-restaurant-img">
-        <div fxLayout="column" fxLayoutAlign="center center">
-            <span class="popular-restaurant-title">{{restaurant.title}}</span>
-            <span class="popular-restaurant-chef">{{restaurant.chef}}</span>
-        </div>
+<swiper
+  fxHide.gt-xs="true"
+  ngClass.xs="mobile"
+>
+  <div *ngFor="let restaurant of popularRestaurants" class="restaurant-element">
+    <img src="{{ restaurant.img }}" class="popular-restaurant-img" />
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <span class="popular-restaurant-title">{{ restaurant.title }}</span>
+      <span class="popular-restaurant-chef">{{ restaurant.chef }}</span>
     </div>
+  </div>
 </swiper>

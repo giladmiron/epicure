@@ -1,60 +1,64 @@
 .restaurant-details-img {
-    height: 269px;
-    width: 100vw;
+  height: 269px;
+  width: 100vw;
+}
+
+.restaurant-name {
+  font-family: HelveticaNeue;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 2.33px;
+  text-align: center;
+  color: var(--black);
+}
+
+.restaurant-chef {
+  font-family: HelveticaNeue;
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 1.6px;
+  text-align: center;
+  color: var(--black);
+}
+
+.open {
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.42;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: var(--black);
+}
+
+.category {
+  font-family: HelveticaNeue;
+  font-size: 17px;
+  font-weight: 100;
+  letter-spacing: 1.21px;
+  color: var(--black);
+}
+
+span {
+  margin-top: 7px;
+}
+
+.categories div {
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  bottom: -4px;
+}
+
+.category {
+  cursor: pointer;
+}
+
+.desktop {
+  .restaurant-details-img {
+    width: 80vw;
+    height: 60vh;
   }
-
-  .restaurant-name{
-      font-family: HelveticaNeue;
-      font-size: 35px;
-      font-weight: bold;
-      letter-spacing: 2.33px;
-      text-align: center;
-      color: var(--black);
-    }
-
-.restaurant-chef{
-    font-family: HelveticaNeue;
-    font-size: 24px;
-    font-weight: 100;
-    letter-spacing: 1.6px;
-    text-align: center;
-    color: var(--black);
-}
-
-.open{
-    font-family: HelveticaNeue;
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 1.42;
-    letter-spacing: 0.8px;
-    text-align: center;
-    color: var(--black);
-}
-
-.category{
-    font-family: HelveticaNeue;
-    font-size: 17px;
-    font-weight: 100;
-    letter-spacing: 1.21px;
-    color: var(--black);
-}
-
-span{
-    margin-top: 7px;
-}
-
-.categories div{
-    position: relative;
-}
-
-.line{
-    position: absolute;
-    bottom: -4px;
-}
-
-.desktop{
-    .restaurant-details-img{
-        width: 80vw;
-        height: 350px;
-    }   
 }

@@ -8,7 +8,7 @@ import { Component, OnInit, ElementRef, Input } from "@angular/core";
 export class RestaurantMenuComponent implements OnInit {
   showPopup: boolean = false;
   dishDetails: {};
-  @Input() menu: {} = {};
+  @Input() menu: any = {};
 
   constructor(private _elementRef: ElementRef) {}
 

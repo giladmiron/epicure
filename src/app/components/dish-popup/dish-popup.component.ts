@@ -10,7 +10,7 @@ export class DishPopupComponent implements OnInit {
 
   constructor() { }
 
-  @Input() dishDetails: {}
+  @Input() dishDetails: any
   @Output() hidePopup = new EventEmitter()
 
   ngOnInit() {
