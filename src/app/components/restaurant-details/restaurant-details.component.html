@@ -4,12 +4,9 @@
   fxLayoutAlign="center center"
   ngClass.gt-xs="desktop"
 >
-  <img
-    src="../../../assets/photos/claro@3x.jpg"
-    class="restaurant-details-img"
-  />
-  <span class="restaurant-name">Claro</span>
-  <span class="restaurant-chef">Ran Shmueli</span>
+  <img [src]="details.img" class="restaurant-details-img" />
+  <span class="restaurant-name">{{ details.name }}</span>
+  <span class="restaurant-chef">{{ details.chef.name }}</span>
   <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="5px">
     <img src="../../../assets/icons/clock-icon.svg" />
     <p class="open">Open now</p>

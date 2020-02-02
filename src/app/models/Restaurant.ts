@@ -3,6 +3,6 @@ export class Restaurant {
     name: string;
     chef: {};
     img: string;
-    Menu: {};
+    menu: {};
     dataAdded: string
 }

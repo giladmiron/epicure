@@ -67,7 +67,7 @@ import { ChefRestaurantsBoxComponent } from './components/chef-restaurants-box/c
     ChefRestaurantsBoxComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     FlexLayoutModule,
     SwiperModule,

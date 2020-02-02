@@ -1,86 +1,83 @@
-.category{
-    margin: 10px 20px;
-    margin-top: 55px;
+.category {
+  margin: 10px 20px;
+  margin-top: 55px;
 }
 
-.category-title{
-    height: 17px;
-    font-family: HelveticaNeue;
-    font-size: 14px;
-    font-weight: 100;
-    letter-spacing: 0.93px;
-    color: var(--black);
+.category-title {
+  height: 17px;
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 0.93px;
+  color: var(--black);
 }
 
-.line{
-    width:90px;
-    height: 1px;
-    border: solid 0.1px rgb(151, 151, 151,0.5);
+.line {
+  width: 90px;
+  height: 1px;
+  border: solid 0.1px rgb(151, 151, 151, 0.5);
 }
 
-.category-container{
+.category-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   margin-bottom: 15px;
 }
 
-
-.dish-container{
+.dish-container {
   margin-top: 10px;
-    width: 169px;
-    height: 304px;
-    background-color:rgb(247,224,178,0.4)
-  }
+  width: 169px;
+  height: 304px;
+  background-color: rgb(247, 224, 178, 0.4);
+}
 
-  .dish-image {
-    width:169px;
-    height: 130px ;
-  }
+.dish-image {
+  width: 169px;
+  height: 130px;
+}
 
-  .description-container {
-    height: 155px;
-  }
+.description-container {
+  height: 155px;
+}
 
-  .dish-icon {
-    width: 20px;
-    height: 16px;
-    object-fit: contain;
-  }
+.dish-icon {
+  width: 20px;
+  height: 16px;
+  object-fit: contain;
+}
 
+.Line-4 {
+  width: 34px;
+  height: 1px;
+  border: solid 0.1px rgb(151, 151, 151, 0.5);
+}
 
-  .Line-4 {
-    width: 34px;
-    height: 1px;
-    border: solid 0.1px rgb(151, 151, 151,0.5);
-  }
-
-  .signature-dish-name {
+.signature-dish-name {
   font-family: HelveticaNeue;
   font-size: 15px;
   font-weight: bold;
   line-height: 1.14;
   letter-spacing: 1px;
   color: var(--black);
-  }
-  
-.signature-dish-description {
-    font-family: HelveticaNeue;
-    font-size: 13px;
-    line-height: 1.14;
-    letter-spacing: 1px;
-    color: var(--black);
 }
 
-  .price {
-    font-family: HelveticaNeue;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 1.67px;
-    color: black;
-  }
+.signature-dish-description {
+  font-family: HelveticaNeue;
+  font-size: 13px;
+  line-height: 1.14;
+  letter-spacing: 1px;
+  color: var(--black);
+}
 
-  
+.price {
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.67px;
+  color: black;
+}
+
 .ils {
   font-weight: bold;
   width: 7px;
@@ -88,18 +85,24 @@
   object-fit: contain;
 }
 
-.desktop{
-  .line{
+.desktop {
+  .line {
     width: 40%;
     margin-left: 40px;
     margin-right: 40px;
   }
 
-  .category{
+  .category {
     position: relative;
   }
 
-  .category-title{
-  font-size: 24px;
+  .category-title {
+    font-size: 24px;
+  }
+  .dish-container {
+    width: 230px;
+  }
+  .dish-image {
+    width: 230px;
   }
 }
